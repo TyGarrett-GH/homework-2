@@ -29,3 +29,39 @@ If the number is even, divide it by 2 until you get 1. For example, $4/2 = 2/2 =
 
 \newpage
 
+## Question 3
+#### Part A
+```{r}
+canvas_collatz(
+  colors = c("blue"),
+  n = 10
+)
+```
+This canvas_collatz function creates 10 blue lines on a blank "canvas" on the computer. These lines probably involve those Collatz Equations. Maybe it traces the path of 10 numbers using the Collatz equations. 
+
+#### Part B
+1) You get a different output everytime you run the code because the function randomly chooses 10 numbers for the starting points. 
+2) This is difficult because everytime I render the document, the artwork will change. This potentially messes up my description of the artwork. 
+
+```{r}
+?set.seed # By giving it a fixed number, you force the random number generator to start at the exact spot every time, creating the same artwork. 
+set.seed(67)
+```
+
+\newpage
+
+## Question 4
+
+```{r}
+canvas_collatz(
+  colors = c("blue"),
+  n = 10
+)
+```
+```{r}
+canvas_collatz(
+  colors = c("blue"),
+  n = 1:20
+)
+```
+The first code randomly chooses any 10 integers while the second code uses the numbers 1 through 20. The second code always produces the same artwork while the second  
