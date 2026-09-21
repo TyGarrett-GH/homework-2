@@ -64,4 +64,6 @@ canvas_collatz(
   n = 1:20
 )
 ```
-The first code randomly chooses any 10 integers while the second code uses the numbers 1 through 20. The second code always produces the same artwork while the second  
+The first code randomly chooses any 10 integers while the second code uses the numbers 1 through 20. The second code always produces the same artwork while the first code's artwark changes after every "run" due to the random number generator. 
+
+Because n = 1:20 explicitly tells the code which numbers to use, the set.seed function is unnecessary.  
