@@ -1,0 +1,16 @@
+---
+title: "Untitled"
+format: html
+editor: visual
+---
+
+## Question 1
+
+```{r}
+#| eval: FALSE
+install.packages("aRtsy")
+```
+
+The difference between install.packages and library is that install.packages downloads a package to the computer while library loads an already-installed package into the current session.
+
+\newpage
